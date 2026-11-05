@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { profile } from '../data/profile'
+import ThemeToggle from './ThemeToggle' 
 
 const links = [
   { id: 'home', label: 'Home' },
@@ -124,8 +125,9 @@ export default function Navbar() {
             aria-current={active === 'contact' ? 'true' : undefined}
             className={`rounded-full bg-lime px-5 py-2 text-sm font-bold text-ink transition duration-300 hover:-translate-y-0.5 hover:bg-white hover:shadow-lg hover:shadow-lime/30 ${active === 'contact' ? 'shadow-lg shadow-lime/40' : ''}`}
           >
-            Let&rsquo;s talk
+                   Let&rsquo;s talk
           </a>
+          <ThemeToggle />
         </div>
 
         <button

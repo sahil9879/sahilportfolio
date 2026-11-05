@@ -61,3 +61,19 @@ body { background: var(--color-ink); color: var(--color-fg); font-family: var(--
 }
 
 .animate-shimmer { animation: shimmer 4s linear infinite; }
+/* Light mode: same classes, sirf colour values badalte hain. */
+html[data-theme="light"] {
+  color-scheme: light;
+  --color-ink: #f4f7fc;
+  --color-surface: #ffffff;
+  --color-fg: #0b1020;
+  --color-muted: #475569;
+  --color-lime: #4d7c0f;
+  --color-sky: #0369a1;
+  --color-line: #cbd5e1;
+  --color-white: #0b1020;
+  --color-zinc-300: #334155;
+  --color-zinc-600: #64748b;
+}
+
+body { transition: background-color 0.3s ease, color 0.3s ease; }
